@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Qore', 'Arial';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Qore.ttf") format("truetype")
+}
+
+
+@font-face {
+  font-family: 'Galiver Sans', 'Arial';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("GaliverSans.ttf") format("truetype")
+}
