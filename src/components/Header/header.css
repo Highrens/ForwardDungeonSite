@@ -4,6 +4,7 @@
     align-items: center;
     min-height: 50px;
     border-bottom: 5px solid white;
+    background: rgba(0, 0, 0, .5);
 }
 
 .header__title{
