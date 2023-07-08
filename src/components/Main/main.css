@@ -15,7 +15,7 @@
 }
 
 .main__post-image{
-    /* max-width: 95%; */
+    max-width: 95%;
     max-height:  400px;
     object-fit: cover;
 }

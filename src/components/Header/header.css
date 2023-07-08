@@ -7,18 +7,42 @@
     background: rgba(0, 0, 0, .5);
 }
 
-.header__title{
-    font-family: 'Qore';
+.header__games{
+    display: flex;
+}
+
+.header__game{
+    
+    padding: 5px;
+    font-size: 18px;
+    display:  flex;
+    text-align: center;
+    align-items: flex-end;
+
+    margin: 20px;
+    font-family: 'Galiver Sans';
     color:  white;
     font-style:  normal;
+    transition: .5s;
+    text-decoration: none;
+}
+.header__game:hover{
+    background-color: #8e8e8e;
+}
+
+.header__game_selected{
+    text-decoration: underline;
+    font-size: 26px;
+    align-items: flex-end;
 }
 
 .header__download-button{
+    margin-bottom: 10px;
     padding: 5px;
     text-decoration: none;
     background: none;
     border: none;
-    font-family: 'Qore';
+    font-family: 'Galiver Sans';
     color:  white;
     font-size: 18px;
     transition: .5s;
@@ -26,4 +50,17 @@
 
 .header__download-button:hover{
     background-color: #8e8e8e;
+}
+
+@media screen and (max-width: 500px) {
+    .header__game{
+        margin: 10px;
+        font-size: 10px;
+    }
+    .header__game_selected{
+        font-size: 18px;
+    }
+
+
+    
 }
