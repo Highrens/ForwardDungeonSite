@@ -17,7 +17,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path="ForwardDungeonSite/"
         element={
           <div className="body">
             <Header curretGame={curretGame}/>
@@ -27,7 +27,7 @@ function App() {
         }
       />
       <Route
-        path="/arena"
+        path="ForwardDungeonSite/arena"
         element={
           <div className="body">
             <Header curretGame={curretGame}/>
@@ -37,7 +37,7 @@ function App() {
         }
       />
       <Route
-        path="/bunker"
+        path="ForwardDungeonSite/bunker"
         element={
           <div className="body">
             <Header curretGame={curretGame}/>
