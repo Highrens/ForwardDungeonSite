@@ -8,7 +8,7 @@ import { Footer } from "../Footer/Footer";
 
 function App() {
 
-  const [curretGame, setCurretGame] = useState("ForwardDungeon");
+  const [curretGame, setCurretGame] = useState("");
 
   function changeCurretGame (game) {
     setCurretGame(game);
@@ -17,7 +17,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/forwardungeon"
+        path="/"
         element={
           <div className="body">
             <Header curretGame={curretGame}/>
