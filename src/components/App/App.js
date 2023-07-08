@@ -27,7 +27,7 @@ function App() {
         }
       />
       <Route
-        path="ForwardDungeonSite/arena"
+        path="ForwardDungeonSite/#/arena"
         element={
           <div className="body">
             <Header curretGame={curretGame}/>
