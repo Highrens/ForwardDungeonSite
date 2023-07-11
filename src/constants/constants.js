@@ -12,6 +12,11 @@ export const FDPosts = [
 export const ArenaPosts = [
   {
     image: image,
+    title: "Update: #110723: Обновление Финала",
+    text: "Поздравляю! Теперь игру можно пройти!",
+  },
+  {
+    image: image,
     title: "Update: #210623: Обновление Арена",
     text: `25+ единиц оружия 
     2 типа стрельбы с мгновенным уроном и с летящим выстрелом
