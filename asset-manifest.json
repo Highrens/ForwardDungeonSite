@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ForwardDungeonSite/static/css/main.3bfde292.css",
-    "main.js": "/ForwardDungeonSite/static/js/main.27528ca1.js",
+    "main.css": "/ForwardDungeonSite/static/css/main.7b770246.css",
+    "main.js": "/ForwardDungeonSite/static/js/main.8f54dd53.js",
     "static/js/787.36ac8ef8.chunk.js": "/ForwardDungeonSite/static/js/787.36ac8ef8.chunk.js",
     "static/media/Arena.zip": "/ForwardDungeonSite/static/media/Arena.90b5f4d0ea1e2e06bb05.zip",
     "static/media/210623.png": "/ForwardDungeonSite/static/media/210623.37c0af32592adbbb85f8.png",
@@ -9,12 +9,12 @@
     "static/media/GaliverSans.ttf": "/ForwardDungeonSite/static/media/GaliverSans.201283727904a5fc8067.ttf",
     "static/media/Qore.ttf": "/ForwardDungeonSite/static/media/Qore.359118cd90f7dfa058cd.ttf",
     "index.html": "/ForwardDungeonSite/index.html",
-    "main.3bfde292.css.map": "/ForwardDungeonSite/static/css/main.3bfde292.css.map",
-    "main.27528ca1.js.map": "/ForwardDungeonSite/static/js/main.27528ca1.js.map",
+    "main.7b770246.css.map": "/ForwardDungeonSite/static/css/main.7b770246.css.map",
+    "main.8f54dd53.js.map": "/ForwardDungeonSite/static/js/main.8f54dd53.js.map",
     "787.36ac8ef8.chunk.js.map": "/ForwardDungeonSite/static/js/787.36ac8ef8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bfde292.css",
-    "static/js/main.27528ca1.js"
+    "static/css/main.7b770246.css",
+    "static/js/main.8f54dd53.js"
   ]
 }
