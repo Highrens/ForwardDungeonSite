@@ -2,44 +2,8 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.main__post{
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    max-width: 1050px;
-    width: 100%;
+    max-width: 1140px;
+    width: 80%;
+    
     align-items: center;
-}
-
-.main__post-image{
-    max-width: 95%;
-    max-height:  400px;
-    object-fit: cover;
-}
-
-.main__post-container{
-    width: 95%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.main__post-title{
-    width: 95%;
-    margin: 10px auto 30px;
-    font-family: 'Galiver Sans';
-    font-weight: normal;
-    color:  white;
-    font-size: 23px;
-    letter-spacing: 1px;
-}
-
-.main__post-text{
-    width: 95%;
-    margin: 0 auto 10px;
-    font-family: 'Galiver Sans';
-    color:  white;
-    font-size: 15px;
-    letter-spacing: 1px;
 }

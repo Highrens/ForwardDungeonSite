@@ -6,46 +6,48 @@ import { Header } from "../Header/Header";
 import { Main } from "../Main/Main";
 import { Footer } from "../Footer/Footer";
 
-function App() {
+import { ArenaPosts, BunkerPosts, FDPosts } from "../../constants/constants";
 
+function App() {
   const [curretGame, setCurretGame] = useState("");
 
-  function changeCurretGame (game) {
+  function changeCurretGame(game) {
     setCurretGame(game);
   }
 
   return (
     <Routes>
       <Route
-        path="ForwardDungeonSite/"
+        path="/"
         element={
           <div className="body">
-            <Header curretGame={curretGame}/>
-            <Main />
+            <Header curretGame={curretGame} />
+            <Main posts={FDPosts}/>
             <Footer />
           </div>
         }
       />
       <Route
-        path="ForwardDungeonSite/#/arena"
+        path="/arena"
         element={
           <div className="body">
-            <Header curretGame={curretGame}/>
-            <Main />
+            <Header curretGame={curretGame} />
+            <Main posts={ArenaPosts}/>
             <Footer />
           </div>
         }
       />
       <Route
-        path="ForwardDungeonSite/bunker"
+        path="/bunker"
         element={
           <div className="body">
-            <Header curretGame={curretGame}/>
-            <Main />
+            <Header curretGame={curretGame} />
+            <Main posts={BunkerPosts}/>
             <Footer />
           </div>
         }
       />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

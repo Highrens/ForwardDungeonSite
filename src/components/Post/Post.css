@@ -1,0 +1,40 @@
+.main__post{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    width: 100%;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main__post-image{
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__post-container{
+    width: 100%;
+    background-color: rgba(108, 108, 108, 0.5);
+}
+
+.main__post-title{
+    width: 95%;
+    margin: 20px auto 30px;
+    font-family: 'Galiver Sans';
+    font-weight: normal;
+    color:  white;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.main__post-text{
+    width: 95%;
+    margin: 0 auto 20px;
+    font-family: 'Galiver Sans';
+    color:  white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
