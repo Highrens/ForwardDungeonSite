@@ -2,15 +2,15 @@
     max-width: 1140px;
     width: 80%;
     display:  flex;
-    flex-direction: column;
     align-items: center;
     min-height: 50px;
+    justify-content: space-between;
 }
 
-.footer__nav{
+/* .footer__nav{
     width: 95%;
-    /* border: salmon solid 1px; */
-}
+     border: salmon solid 1px;
+} */
 
 .footer__nav-list{
     display: flex;
@@ -19,6 +19,7 @@
 }
 
 .footer__nav-link{
+    
     padding: 5px 10px;
     font-family: 'Galiver Sans';
     font-weight: normal;

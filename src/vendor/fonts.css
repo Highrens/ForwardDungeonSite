@@ -8,9 +8,11 @@
 
 
 @font-face {
-  font-family: 'Galiver Sans', 'Arial';
+  font-family: 'Galiver Sans';
   font-style:  normal;
   font-weight: 400;
   font-display: swap;
-  src: url("GaliverSans.ttf") format("truetype")
+  src: url("GaliverSans.ttf") format("truetype"),
+  url("GaliverSans.woff") format("woff"),
+  url("GaliverSans.otf") format("opentype");
 }
