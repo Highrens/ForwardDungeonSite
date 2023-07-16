@@ -1,25 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import ArenaBuild from '../../gamebuild/Arena.zip'
 import './header.css';
+const ArenaDownloadLink = "https://disk.yandex.ru/d/HWBTREwwDdn2TQ";
 
 export function Header(props) {
 
   const [currentUrl, setCurrentUrl] = useState('');
   useEffect(() => {
-      // Обновляем значение currentUrl при загрузке и изменении URL
+      // РћР±РЅРѕРІР»СЏРµРј Р·РЅР°С‡РµРЅРёРµ currentUrl РїСЂРё Р·Р°РіСЂСѓР·РєРµ Рё РёР·РјРµРЅРµРЅРёРё URL
       setCurrentUrl(window.location.pathname);
     }, []);
 
-
+  
   return (
       <header className="header">
+        
         <div className='header__games'>
-          <a href='ForwardDungeonSite/arena' className={currentUrl === "ForwardDungeonSite/arena" ? "header__game header__game_selected" : "header__game"}>Arena</a>
-          <a href='ForwardDungeonSite/forwardungeon' className={currentUrl === "ForwardDungeonSite/" ? "header__game header__game_selected" : "header__game"}>ForwarDungeon</a>
-          <a href='ForwardDungeonSite/bunker' className={currentUrl === "ForwardDungeonSite/bunker" ? "header__game header__game_selected" : "header__game"}>Bunker</a>
+          <a href='arena' className={currentUrl === "/arena" ? "header__game header__game_selected" : "header__game"}>Arena</a>
+          <a href='forwarddungeon' className={currentUrl === "/forwarddungeon" ? "header__game header__game_selected" : "header__game"}>ForwardDungeon</a>
+          <a href='bunker' className={currentUrl === "/bunker" ? "header__game header__game_selected" : "header__game"}>Bunker</a>
         </div>
+        {/* <button className='header__download-button' onClick={props.downloadClick}>РљРЅРѕРїРµРєР°</button> */}
         {currentUrl === "/arena" ?
-         <a className='header__download-button' href={ArenaBuild} download={true}  >Download {currentUrl.slice(1)}</a> : ""}
+        
+         <a className='header__download-button' 
+            href={ArenaDownloadLink} 
+            download={true}
+            target="_blank" rel="noopener noreferrer"
+            >
+          РЎРєР°С‡Р°С‚СЊ {currentUrl.slice(1)}</a> : ""}
         
       </header>
   );

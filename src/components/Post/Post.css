@@ -28,14 +28,19 @@
     font-weight: normal;
     color:  white;
     font-size: 23px;
+    
+    line-height: initial;
     letter-spacing: 1px;
 }
 
 .main__post-text{
+    white-space: pre-line;
     width: 95%;
     margin: 0 auto 20px;
     font-family: 'Galiver Sans';
     color:  white;
     font-size: 15px;
+    
+    line-height: initial;
     letter-spacing: 1px;
 }

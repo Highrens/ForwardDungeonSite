@@ -37,12 +37,10 @@
 
 .header__game_selected{
     text-decoration: underline;
-    align-items: flex-end;
 }
 
 .header__download-button{
     width: fit-content;
-    max-height: 20px;
     padding: 7px 12px;
     text-decoration: none;
     background: none;
