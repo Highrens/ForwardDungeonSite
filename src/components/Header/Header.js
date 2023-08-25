@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './header.css';
+import icon from '../../images/ArenaIcon.png';
+
 const ArenaDownloadLink = "https://disk.yandex.ru/d/HWBTREwwDdn2TQ";
 
 export function Header(props) {
@@ -15,6 +17,7 @@ export function Header(props) {
       <header className="header">
         
         <div className='header__games'>
+          <a href='/'><img className='header__main-icon' src={icon} alt="icon"></img></a>
           <a href='arena' className={currentUrl === "/arena" ? "header__game header__game_selected" : "header__game"}>Arena</a>
           <a href='forwarddungeon' className={currentUrl === "/forwarddungeon" ? "header__game header__game_selected" : "header__game"}>ForwardDungeon</a>
           <a href='bunker' className={currentUrl === "/bunker" ? "header__game header__game_selected" : "header__game"}>Bunker</a>

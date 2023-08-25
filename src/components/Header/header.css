@@ -10,12 +10,17 @@
 
 .header__games{
     display: flex;
+}
 
-
+.header__main-icon{
+    padding: 0;
+    max-width: 64px;
+    max-height: 64px;
+    background: none;
+    border: none;
 }
 
 .header__game{
-
     padding: 5px 10px;
     font-size: 18px;
     display:  flex;

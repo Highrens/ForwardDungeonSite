@@ -9,47 +9,59 @@ import { Footer } from "../Footer/Footer";
 import { BunkerPosts, FDPosts } from "../../constants/constants";
 import { ArenaAbout, ArenaPosts } from "../../constants/ArenaConsts";
 
-import { AboutGame} from "../AboutGame/AboutGame";
+import { AboutGame } from "../AboutGame/AboutGame";
+import { Landing } from "../Landing/Landing";
 
 function App() {
   const [curretGame, setCurretGame] = useState("");
 
   return (
-    <Routes>
-      <Route
-        path="/forwarddungeon"
-        element={
-          <div className="body">
-            <Header curretGame={curretGame}/>
-            <Main posts={FDPosts}/>
-            <Footer />
-          </div>
-        }
-      />
-      <Route
-        path="/arena"
-        element={
-          <div className="body">
-            <Header curretGame={curretGame} />
-            <AboutGame game={ArenaAbout}/>
-            
-            <Main posts={ArenaPosts}/>
-            <Footer />
-          </div>
-        }
-      />
-      <Route
-        path="/bunker"
-        element={
-          <div className="body">
-            <Header curretGame={curretGame} />
-            <Main posts={BunkerPosts}/>
-            <Footer />
-          </div>
-        }
-      />
-      <Route path="*" element={<Navigate to="/arena" replace />} />
-    </Routes>
+    <div className="body">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header curretGame={curretGame} />
+              <Landing />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/forwarddungeon"
+          element={
+            <>
+              <Header curretGame={curretGame} />
+              <Main posts={FDPosts} />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/arena"
+          element={
+            <>
+              <Header curretGame={curretGame} />
+              <AboutGame game={ArenaAbout} />
+              <Main posts={ArenaPosts} />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/bunker"
+          element={
+            <>
+              <Header curretGame={curretGame} />
+              <Main posts={BunkerPosts} />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="*" element={<Navigate to="/arena" replace />} />
+      </Routes>
+    </div>
   );
 }
 
